@@ -46,6 +46,11 @@ python -m streamlit run practice/02_launching_streamlit.py
 If you are opening VS code from a different folder though, I recommend just
 right clicking each file name and copying and pasting the file path instead.
 
+IS IT ASKING FOR YOUR EMAIL?
+----------------------------
+If it asks you for your email in the terminal, just press enter/return to skip
+it then it won't ask again and it should start working.
+
 '''
 
 import streamlit as st
