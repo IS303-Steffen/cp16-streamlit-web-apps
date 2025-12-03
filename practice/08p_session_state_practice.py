@@ -20,17 +20,3 @@ Hint: Remember the best way to do this is to use st.session_state. You should
       create your list inside st.session_state first, but put it inside an if
       statement so it only creates it the very first time your page runs.
 '''
-
-import streamlit as st
-st.write("My Grocery List")
-if not "grocery_list" in st.session_state:
-    st.session_state['grocery_list'] = []
-
-with st.form("todo"):
-    to_do_item = st.text_input("Enter an item for your grocery list")
-    submitted = st.form_submit_button("Add to list")
-
-if submitted:
-    st.session_state['grocery_list'].append(to_do_item)
-    st.write("Your list:", st.session_state['grocery_list'])
-

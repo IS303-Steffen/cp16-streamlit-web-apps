@@ -21,11 +21,8 @@ rerunning after every interaction.
 '''
 
 # 1. UNDERSTANDING HOW STREAMLIT RE RUNS YOUR CODE
-# Import streamlit as st and then use st.write()
-# anything you put in st.write() like text or variables will appear on your page.
-# You can include markdown formatting to do headings.
-# For example you can do "# My Page" for large font. You could alternatively
-# do st.title("My Page") for the same effect.
+# Interact with any of the widgets. Notice how the random number changes each
+# time? This is because your code is being rerun after every interaction.
 
 import random
 import streamlit as st

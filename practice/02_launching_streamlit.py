@@ -12,7 +12,7 @@ and that webserver is going to run our python code.
 Here are some key concepts that will help you understand:
 
 - Web Server:
-    - a program tha listens for requests and sends back web pages. When you run
+    - a program that listens for requests and sends back web pages. When you run
       streamlit, your own computer is acting as the webserver.
 
 - Localhost:
@@ -28,20 +28,29 @@ Here are some key concepts that will help you understand:
       the web page. To stop it, you can either press CTRL + C (same for Windows
       and Mac) or kill your terminal by clicking the trash icon.
 
+      
+START UP STREAMLIT
+------------------
+In your TERMINAL, type:
+
+streamlit run practice/02_launching_streamlit.py
+
+If you start typing out "p" and then press tab it will complete the name
+of the folder for you, and then if you start typing "02" then tab it will write
+out the rest of the file for you.
+
+or if that doesn't work, try:
+
+python -m streamlit run practice/02_launching_streamlit.py
+
+If you are opening VS code from a different folder though, I recommend just
+right clicking each file name and copying and pasting the file path instead.
+
 '''
-
-# 1. START UP STREAMLIT
-# In your terminal, type:
-#   streamlit run name_of_your_python_file.py
-# In this case, you are probably in the "practice" folder, so you'll probably
-# need to type streamlit run practice/02_launching_streamlit.py
-# If you start typing out "p" and then press tab it will complete the name
-# of the folder for you, and then if you start typing 02 then tab it will write
-# out the rest of the file for you.
-
 
 import streamlit as st
 
 st.write("# Hello there!")
 st.write("You are running this web application from your own computer")
+st.write("If you'd like, try editing some of the text here, save the python file, then click rerun in your browser.")
 

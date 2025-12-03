@@ -33,10 +33,3 @@ st.write("# Forms practice")
 # date_input()). Then your form should have a form_submit_button() (every form
 # must have one). If the form is submitted it should say "x's birthday is on x"
 
-with st.form("example_form"):
-    name = st.text_input("Enter your name")
-    birthdate = st.date_input("Enter your birthday", None)
-    submitted = st.form_submit_button("Submit")
-
-if submitted:
-    st.write(f"{name}'s birthday is on {birthdate}")
